@@ -3,3 +3,8 @@
 3. npm i -D cypress cypress-cucumber-preprocessor
 4. npm install --save-dev cypress-cucumber-preprocessor
 5. npx cypress open 
+
+
+Smoke
+npx cypress run -e TAGS='@smoke' 
+npx cypress run -e TAGS='@smoke and not @regression'

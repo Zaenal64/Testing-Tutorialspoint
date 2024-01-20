@@ -3,6 +3,7 @@ Feature: Newtours Validation
 Background: 
   Given open newtours application
 
+@smoke @sanity
 Scenario: Home Page
   When I log in as Following
     |userName| password |
@@ -10,6 +11,8 @@ Scenario: Home Page
   Then click on submit button
   And verify title should be 'Login: Mercury Tours'
 
+
+@regression
   Scenario: Verifying my Title
   When I log in as Following
     |userName| password |
