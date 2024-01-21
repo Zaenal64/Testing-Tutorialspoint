@@ -5,13 +5,17 @@ Background:
 
 @smoke @sanity
 Scenario: Home Page
-When provide valid 'mercury' and 'mercury'
+  When I log in as Following
+    |userName| password |
+    |mercury | mercury  |
   Then click on submit button
   And verify title should be 'Login: Mercury Tours'
 
 
 @regression
   Scenario: Verifying my Title
-  When provide valid 'mercury' and 'mercury'
+  When I log in as Following
+    |userName| password |
+    |mercury | mercury  |
   Then click on submit button
   And verify title should be 'Login: Mercury Tours'
